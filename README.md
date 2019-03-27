@@ -1,18 +1,14 @@
-# Flask-React-SocketIO
-Flask, React, and SocketIO in Python3 and ES6
+# Flask-React
+Flask, React in Python3 and ES6
 
 ## Run
-- virtualenv venv
+- virtualenv venv --python=python3.6
 - source venv/bin/activate
-- pip3 install -r requirements.txt
+- pip install -r requirements.txt
 - npm install --save-dev
 - npm run watch (Run webpack)
-- python3 main.py
+- python app.py
 
 ## pylint
 pip install pylint
 pylint {filename/directory}
-
-
-## Documentation
-http://flask-socketio.readthedocs.io/en/latest/
