@@ -28,7 +28,8 @@
     "style-loader": "0.23.0",
     "webpack": "4.19.0",
     "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.11"
+    "webpack-dev-server": "3.1.11",
+    "tar": "4.4.2"
   },
   "dependencies": {
     "react": "16.5.1",
