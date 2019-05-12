@@ -36,6 +36,8 @@
   "dependencies": {
     "react": "16.5.1",
     "react-dom": "16.5.1",
-    "serve-favicon": "2.5.0"
+    "serve-favicon": "2.5.0",
+    "fresh": "0.5.2",
+    "mime": "1.4.1"
   }
 }
