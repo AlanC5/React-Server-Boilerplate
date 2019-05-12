@@ -4,4 +4,4 @@ React and ES6
 ## Run
 - npm install --save-dev
 - npm run webpack
-- npm run start
+- node server.js

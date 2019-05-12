@@ -8,7 +8,8 @@
     "dev-build": "babel-node ./node_modules/webpack/bin/webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "babel-node ./node_modules/webpack/bin/webpack",
-    "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open"
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "babel-node ./node_modules/webpack/bin/webpack"
   },
   "author": "",
   "license": "ISC",
@@ -29,10 +30,12 @@
     "webpack": "4.19.0",
     "webpack-cli": "3.1.0",
     "webpack-dev-server": "3.1.11",
-    "tar": "4.4.2"
+    "tar": "4.4.2",
+    "express": "4.13.3"
   },
   "dependencies": {
     "react": "16.5.1",
-    "react-dom": "16.5.1"
+    "react-dom": "16.5.1",
+    "serve-favicon": "2.5.0"
   }
 }

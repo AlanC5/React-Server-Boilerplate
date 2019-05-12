@@ -1,18 +1,19 @@
 import path from 'path';
+import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import express from 'express';
 
 module.exports = {
-  entry: path.join(__dirname,'src','index.js'),
+  entry: {
+    index: path.join(__dirname,'src','index.js')
+  },
   output: {
     path: path.join(__dirname,'static/dist'),
-    filename: 'index.bundle.js'
+    filename: '[name].bundle.js'
   },
   mode: process.env.NODE_ENV || 'development',
   resolve: {
     modules: [path.resolve(__dirname, 'src'), 'node_modules']
-  },
-  devServer: {
-    contentBase: path.join(__dirname,'src')
   },
   module: {
     rules: [
@@ -40,7 +41,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname,'static','index.html')
+      chunks: ['index'],
+      template: path.join(__dirname,'static','index.html'),
+      filename: path.join(__dirname,'static/dist','index.html')
     })
-  ]
+  ],
+  watch: false
 };
